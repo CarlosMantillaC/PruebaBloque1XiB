@@ -36,7 +36,8 @@ class ViewControllerReproductor: UIViewController {
         view.backgroundColor = .systemBackground
 
         tableView.dataSource = self
-        tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
+        let nib = UINib(nibName: "TableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "TableViewCell")
         tableView.translatesAutoresizingMaskIntoConstraints = false
     }
 
@@ -52,8 +53,9 @@ extension ViewControllerReproductor: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
         
-        
-        
+        let model = canciones[indexPath.row]
+        cell.configure(model: model)
+
         return cell
     }
 }
