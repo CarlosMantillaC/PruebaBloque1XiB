@@ -19,9 +19,26 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var botonPausar: UIButton!
     
     
+    private var isReproduciendo: Bool = false {
+        didSet {
+            nameLabel.textColor = isReproduciendo ? .systemBlue : .label
+        }
+    }
+    
     weak var accionesBotones: AccionesBotones?
 
-    func configure(model: Cancion) {
-           nameLabel.text = model.title
+    
+    @IBAction func reproducirAccionBoton(_ sender: Any) {
+        accionesBotones?.reproducirAccion(cell: self)
+    }
+    
+    @IBAction func pausarAccionBoton(_ sender: Any) {
+        accionesBotones?.pausarAccion(cell: self)
+    }
+    
+    
+    func configure(model: Cancion, isReproduciendo: Bool) {
+        nameLabel.text = model.title
+        self.isReproduciendo = isReproduciendo
     }
 }

@@ -26,11 +26,17 @@
                         <rect key="frame" x="188" y="95.666666666666671" width="47" height="35.000000000000014"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="▶️"/>
+                        <connections>
+                            <action selector="reproducirAccionBoton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zpt-Gu-WLu"/>
+                        </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Brh-bz-Dzd">
                         <rect key="frame" x="257" y="95.666666666666671" width="47" height="35.000000000000014"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="⏸️"/>
+                        <connections>
+                            <action selector="pausarAccionBoton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kK0-PL-FQb"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

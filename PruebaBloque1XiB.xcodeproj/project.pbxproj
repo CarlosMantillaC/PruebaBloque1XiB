@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C480B8512DF30145008DC963 /* cancion1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C480B84B2DF30145008DC963 /* cancion1.mp3 */; };
+		C480B8522DF30145008DC963 /* cancion3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C480B84D2DF30145008DC963 /* cancion3.mp3 */; };
+		C480B8532DF30145008DC963 /* cancion4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C480B84E2DF30145008DC963 /* cancion4.mp3 */; };
+		C480B8542DF30145008DC963 /* cancion6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C480B8502DF30145008DC963 /* cancion6.mp3 */; };
+		C480B8552DF30145008DC963 /* cancion5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C480B84F2DF30145008DC963 /* cancion5.mp3 */; };
+		C480B8562DF30145008DC963 /* cancion2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C480B84C2DF30145008DC963 /* cancion2.mp3 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C467872C2DF239450041C147 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +36,12 @@
 		C46787152DF239430041C147 /* PruebaBloque1XiB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaBloque1XiB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C467872B2DF239450041C147 /* PruebaBloque1XiBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaBloque1XiBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C46787352DF239450041C147 /* PruebaBloque1XiBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaBloque1XiBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C480B84B2DF30145008DC963 /* cancion1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cancion1.mp3; sourceTree = "<group>"; };
+		C480B84C2DF30145008DC963 /* cancion2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cancion2.mp3; sourceTree = "<group>"; };
+		C480B84D2DF30145008DC963 /* cancion3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cancion3.mp3; sourceTree = "<group>"; };
+		C480B84E2DF30145008DC963 /* cancion4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cancion4.mp3; sourceTree = "<group>"; };
+		C480B84F2DF30145008DC963 /* cancion5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cancion5.mp3; sourceTree = "<group>"; };
+		C480B8502DF30145008DC963 /* cancion6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cancion6.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +103,7 @@
 		C467870C2DF239430041C147 = {
 			isa = PBXGroup;
 			children = (
+				C480B84A2DF30129008DC963 /* canciones */,
 				C46787172DF239430041C147 /* PruebaBloque1XiB */,
 				C467872E2DF239450041C147 /* PruebaBloque1XiBTests */,
 				C46787382DF239450041C147 /* PruebaBloque1XiBUITests */,
@@ -103,6 +119,19 @@
 				C46787352DF239450041C147 /* PruebaBloque1XiBUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C480B84A2DF30129008DC963 /* canciones */ = {
+			isa = PBXGroup;
+			children = (
+				C480B84B2DF30145008DC963 /* cancion1.mp3 */,
+				C480B84C2DF30145008DC963 /* cancion2.mp3 */,
+				C480B84D2DF30145008DC963 /* cancion3.mp3 */,
+				C480B84E2DF30145008DC963 /* cancion4.mp3 */,
+				C480B84F2DF30145008DC963 /* cancion5.mp3 */,
+				C480B8502DF30145008DC963 /* cancion6.mp3 */,
+			);
+			path = canciones;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +254,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C480B8512DF30145008DC963 /* cancion1.mp3 in Resources */,
+				C480B8522DF30145008DC963 /* cancion3.mp3 in Resources */,
+				C480B8532DF30145008DC963 /* cancion4.mp3 in Resources */,
+				C480B8542DF30145008DC963 /* cancion6.mp3 in Resources */,
+				C480B8552DF30145008DC963 /* cancion5.mp3 in Resources */,
+				C480B8562DF30145008DC963 /* cancion2.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
