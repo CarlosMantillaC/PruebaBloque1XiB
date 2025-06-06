@@ -27,6 +27,10 @@ class ViewControllerReproductor: UIViewController {
     private var cancionActual: String?
     
     
+    @IBAction func botonRandom(_ sender: Any) {
+        random()
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()

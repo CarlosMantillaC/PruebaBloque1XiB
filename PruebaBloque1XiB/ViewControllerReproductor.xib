@@ -31,6 +31,9 @@
                     <rect key="frame" x="153" y="722" width="87.333333333333314" height="35"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Random"/>
+                    <connections>
+                        <action selector="botonRandom:" destination="-1" eventType="touchUpInside" id="ptn-RJ-9hJ"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
