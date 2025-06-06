@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    let usuarioValido = "Admin"
+    let usuarioValido = "admin"
     let contrasenaValida = "1234"
     
     

@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wY7-D6-hQk">
-                    <rect key="frame" x="76" y="134" width="240" height="128"/>
+                    <rect key="frame" x="16" y="134" width="361" height="326"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <color key="sectionIndexBackgroundColor" systemColor="systemOrangeColor"/>
                 </tableView>
@@ -33,13 +33,13 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="zdJ-m1-0bq" firstAttribute="top" secondItem="wY7-D6-hQk" secondAttribute="bottom" constant="460" id="8cu-ac-qL4"/>
+                <constraint firstItem="zdJ-m1-0bq" firstAttribute="top" secondItem="wY7-D6-hQk" secondAttribute="bottom" constant="262" id="8cu-ac-qL4"/>
                 <constraint firstItem="zdJ-m1-0bq" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MBm-g5-Uq4"/>
-                <constraint firstItem="wY7-D6-hQk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="76" id="ZVa-fr-bN8"/>
+                <constraint firstItem="wY7-D6-hQk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ZVa-fr-bN8"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zdJ-m1-0bq" secondAttribute="bottom" constant="27" id="ilW-xz-oit"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wY7-D6-hQk" secondAttribute="bottom" constant="522" id="lDh-pl-g8O"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wY7-D6-hQk" secondAttribute="bottom" constant="324" id="lDh-pl-g8O"/>
                 <constraint firstItem="wY7-D6-hQk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="nYy-Kj-SwC"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wY7-D6-hQk" secondAttribute="trailing" constant="77" id="xSQ-mF-aCu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wY7-D6-hQk" secondAttribute="trailing" constant="16" id="xSQ-mF-aCu"/>
             </constraints>
             <point key="canvasLocation" x="43.511450381679388" y="-11.267605633802818"/>
         </view>

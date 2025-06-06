@@ -6,25 +6,54 @@
 //
 
 import UIKit
+import AVFoundation
+
+struct Cancion {
+    let title: String
+}
 
 class ViewControllerReproductor: UIViewController {
 
+    private var canciones: [Cancion] = [
+           Cancion(title: "cancion1"),
+           Cancion(title: "cancion2"),
+           Cancion(title: "cancion3"),
+           Cancion(title: "cancion4"),
+           Cancion(title: "cancion5"),
+           Cancion(title: "cancion6"),
+       ]
+    
+    private var reproductor: AVAudioPlayer?
+    private var cancionActual: String?
+       
+    
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .systemBackground
+
+        tableView.dataSource = self
+        tableView.register(TableViewCell.self, forCellReuseIdentifier: "TableViewCell")
+        tableView.translatesAutoresizingMaskIntoConstraints = false
     }
 
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension ViewControllerReproductor: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        canciones.count
     }
-    */
-
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
+        
+        
+        
+        return cell
+    }
 }
