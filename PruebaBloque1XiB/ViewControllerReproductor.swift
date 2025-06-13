@@ -28,7 +28,7 @@ class ViewControllerReproductor: UIViewController {
     
     
     @IBAction func botonRandom(_ sender: Any) {
-        random()
+        reproducirAleatoria()
     }
     
     @IBOutlet weak var tableView: UITableView!
@@ -129,37 +129,33 @@ extension ViewControllerReproductor {
 
 extension ViewControllerReproductor {
     
+    func reproducirAleatoria() {
+        
+        reproducir(nombre: canciones[random()-1].title)
+     }
     
-    private func random(n: Int = 0, divisor: Int = 2, acumulado: [String] = []) {
-        
-        if acumulado.count == 3 {
-            let cancion = acumulado[acumulado.count-1]
-            reproducir(nombre: cancion)
-            tableView.reloadData()
-            return
-        }
-        
-        if n < 2 {
-            random(n: n+1, acumulado: acumulado)
-            return
-        }
-        
-        if divisor*divisor > n {
+    
+    private func random(n: Int = 0, divisor: Int = 2, acumulado: [Int] = []) -> Int {
             
-            var nuevoAcumulado = acumulado
-            nuevoAcumulado.append(canciones[n].title)
-            random(n: n+1, divisor: 2, acumulado: nuevoAcumulado)
-            return
+            if acumulado.count == 3 {
+                return acumulado[acumulado.count-1]
+            }
+            
+            if n < 2 {
+                return random(n: n+1, acumulado: acumulado)
+            }
+            
+            if divisor * divisor > n {
+                var nuevoAcumulado = acumulado
+                nuevoAcumulado.append(n)
+                return random(n: n+1, divisor: 2, acumulado: nuevoAcumulado)
+            }
+            
+            if n % divisor == 0 {
+                return random(n: n+1, acumulado: acumulado)
+            }
+            
+            return random(n: n, divisor: divisor+1, acumulado: acumulado)
         }
-        
-        if  n % divisor == 0 {
-            random(n: n+1, acumulado: acumulado)
-            return
-        }
-       
-        return random(n: n, divisor: divisor+1, acumulado: acumulado)
-        
-    }
-    
     
 }
